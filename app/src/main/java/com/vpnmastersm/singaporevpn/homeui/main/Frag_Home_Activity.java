@@ -38,6 +38,7 @@ import com.facebook.ads.AdSize;
 import com.facebook.ads.AudienceNetworkAds;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.RequestConfiguration;
+import com.startapp.sdk.adsbase.StartAppAd;
 import com.vpnmastersm.singaporevpn.adapter.ServerLocation;
 import com.bumptech.glide.Glide;
 import com.facebook.ads.AdView;
@@ -252,16 +253,11 @@ public class Frag_Home_Activity extends Fragment implements VpnStatus.StateListe
 
 
             }
+            StartAppAd.showAd(getContext());
+
         });
 
-        cv_location.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                showLocationSelectDialog();
-
-            }
-        });
+        cv_location.setOnClickListener(v -> showLocationSelectDialog());
 
 
     }

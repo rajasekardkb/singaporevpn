@@ -10,67 +10,13 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="310dp"
-        app:cardCornerRadius="30dp"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="310dp"
-            android:orientation="vertical"
-            android:background="@drawable/backn"
-            android:id="@+id/llProfileHeader"
-            android:gravity="center_horizontal"/>
-
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_connection_status"
-        android:layout_width="154dp"
-        android:layout_height="154dp"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="120dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
-        app:cardBackgroundColor="@android:color/white"
-        app:cardCornerRadius="77dp"
-        app:cardElevation="10dp">
-
-        <ImageView
-            android:id="@+id/background_circle"
-            android:layout_width="154dp"
-            android:layout_height="154dp"
-            android:src="@drawable/earth_static" />
-
-
-
-    </androidx.cardview.widget.CardView>
-    <TextView
-        android:id="@+id/connection_status2"
-        android:layout_below="@+id/cv_connection_status"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:padding="4dp"
-        android:text="Disconnected "
-        android:textColor="#E72C30"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:visibility="visible" />
-    <androidx.cardview.widget.CardView
         android:id="@+id/cardview_location"
         android:layout_width="match_parent"
-        android:layout_above="@+id/connection_status1"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/_45sdp"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="6dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
         android:layout_marginBottom="30dp"
         app:cardBackgroundColor="#009688"
         app:cardCornerRadius="15dp"
@@ -81,14 +27,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
             android:gravity="center"
             android:orientation="horizontal"
             android:paddingTop="10dp"
             android:paddingBottom="10dp">
-
-
 
 
             <TextView
@@ -112,59 +56,103 @@
                 android:layout_width="16sp"
                 android:layout_height="16sp"
 
-                android:src="@drawable/ic_scroll_down"/>
+                android:src="@drawable/ic_scroll_down" />
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_connection_status"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="77dp"
+        app:cardElevation="10dp">
+
+        <ImageView
+            android:id="@+id/background_circle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/earth_static" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/connection_status2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/connection_status1"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/disconnected"
+        android:textColor="#E72C30"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        android:visibility="visible" />
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/connection_status1"
         android:layout_width="match_parent"
-        android:layout_above="@+id/banner_container"
-        android:layout_height="60dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="6dp"
-        android:layout_marginEnd="36dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_above="@+id/startAppBanner"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
         android:layout_marginBottom="30dp"
+        android:clickable="true"
         app:cardBackgroundColor="#38b5ef"
         app:cardCornerRadius="15dp"
-        android:clickable="true"
         app:cardElevation="10dp">
-    <TextView
-        android:id="@+id/connection_status"
+
+        <TextView
+            android:id="@+id/connection_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Connect "
+            android:textColor="#FFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </androidx.cardview.widget.CardView>
+
+    <com.startapp.sdk.ads.banner.Banner
+        android:id="@+id/startAppBanner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:padding="4dp"
-        android:text="Connect "
-        android:textColor="#FFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:visibility="visible" />
-    </androidx.cardview.widget.CardView>
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_above="@+id/banner_container"
+        />
+
     <LinearLayout
         android:id="@+id/banner_container"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:foregroundGravity="center"
         android:gravity="bottom"
-        android:layout_alignParentBottom="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:orientation="vertical" />
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
 
     <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-        android:visibility="gone"
         android:id="@+id/footer_av"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:foregroundGravity="center"
+        android:visibility="gone"
         ads:adSize="BANNER"
         ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
 
