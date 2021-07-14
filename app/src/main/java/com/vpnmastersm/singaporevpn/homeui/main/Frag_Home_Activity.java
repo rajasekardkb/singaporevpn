@@ -68,7 +68,6 @@ public class Frag_Home_Activity extends Fragment implements VpnStatus.StateListe
 
     private AutoConfigVPN mConfig;
     private TextView connection_tv, taplocation,connection_tv2;
-  //  private AdView footerAdView;
     private ServerCountryAdapter scadapter;
     private AdController controller;
     public static final String MyPREFERENCES = "MyPrefs" ;
