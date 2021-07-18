@@ -1,4 +1,4 @@
-package com.vpnmastersm.singaporevpn.adapter;
+package com.vpnmastersm.singaporevpnmaster.adapter;
 
 public class ServerLocation {
     private String name;

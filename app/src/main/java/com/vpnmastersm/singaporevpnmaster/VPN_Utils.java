@@ -1,6 +1,6 @@
-package com.vpnmastersm.singaporevpn;
+package com.vpnmastersm.singaporevpnmaster;
 
-import com.vpnmastersm.singaporevpn.adapter.ServerLocation;
+import com.vpnmastersm.singaporevpnmaster.adapter.ServerLocation;
 
 import java.util.ArrayList;
 import java.util.List;

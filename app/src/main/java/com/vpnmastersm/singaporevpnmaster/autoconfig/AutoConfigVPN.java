@@ -1,4 +1,4 @@
-package com.vpnmastersm.singaporevpn.autoconfig;
+package com.vpnmastersm.singaporevpnmaster.autoconfig;
 
 import android.content.Context;
 

@@ -1,4 +1,4 @@
-package com.vpnmastersm.singaporevpn;
+package com.vpnmastersm.singaporevpnmaster;
 
 
 import android.app.Activity;

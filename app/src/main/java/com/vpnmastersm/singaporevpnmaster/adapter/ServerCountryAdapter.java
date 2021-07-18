@@ -1,4 +1,4 @@
-package com.vpnmastersm.singaporevpn.adapter;
+package com.vpnmastersm.singaporevpnmaster.adapter;
 
 
 import android.app.Dialog;
@@ -12,8 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.vpnmastersm.singaporevpn.R;
-import com.vpnmastersm.singaporevpn.vpnhelper.CountryPrefs;
+import com.vpnmastersm.singaporevpnmaster.R;
+import com.vpnmastersm.singaporevpnmaster.vpnhelper.CountryPrefs;
 
 
 import java.util.ArrayList;

@@ -1,9 +1,9 @@
-package com.vpnmastersm.singaporevpn.vpnhelper;
+package com.vpnmastersm.singaporevpnmaster.vpnhelper;
 
 import android.content.Context;
 import android.util.Log;
 
-import com.vpnmastersm.singaporevpn.autoconfig.AutoConfigVPN;
+import com.vpnmastersm.singaporevpnmaster.autoconfig.AutoConfigVPN;
 
 import de.blinkt.openvpn.OpenVpnConnector;
 import de.blinkt.openvpn.core.VpnStatus;

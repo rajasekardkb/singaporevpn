@@ -116,13 +116,12 @@
             android:id="@+id/connection_status"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_gravity="center_vertical"
             android:foregroundGravity="center"
-            android:gravity="center"
-            android:padding="4dp"
+            android:gravity="center|center_horizontal"
             android:text="Connect "
             android:textColor="#FFFF"
-            android:textSize="18sp"
+            android:textSize="@dimen/_14sdp"
             android:textStyle="bold"
             android:visibility="visible" />
     </androidx.cardview.widget.CardView>
@@ -131,29 +130,8 @@
         android:id="@+id/startAppBanner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_5sdp"
-        android:layout_above="@+id/banner_container"
-        />
-
-    <LinearLayout
-        android:id="@+id/banner_container"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:foregroundGravity="center"
-        android:gravity="bottom"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        android:layout_marginBottom="@dimen/_5sdp" />
 
-
-    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/footer_av"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:foregroundGravity="center"
-        android:visibility="gone"
-        ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
 
 </RelativeLayout>

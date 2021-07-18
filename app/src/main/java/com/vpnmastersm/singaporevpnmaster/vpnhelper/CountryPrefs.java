@@ -1,4 +1,4 @@
-package com.vpnmastersm.singaporevpn.vpnhelper;
+package com.vpnmastersm.singaporevpnmaster.vpnhelper;
 
 import android.content.Context;
 import android.content.SharedPreferences;

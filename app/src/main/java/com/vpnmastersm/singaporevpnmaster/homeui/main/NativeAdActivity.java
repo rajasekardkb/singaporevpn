@@ -1,4 +1,4 @@
-package com.vpnmastersm.singaporevpn.homeui.main;
+package com.vpnmastersm.singaporevpnmaster.homeui.main;
 
 import android.app.Activity;
 import android.content.Context;
@@ -33,9 +33,9 @@ import com.google.android.gms.ads.formats.UnifiedNativeAd;
 import com.google.android.gms.ads.formats.UnifiedNativeAdView;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-import com.vpnmastersm.singaporevpn.R;
-import com.vpnmastersm.singaporevpn.autoconfig.AutoConfigVPN;
-import com.vpnmastersm.singaporevpn.vpnhelper.VPNServerHelper;
+import com.vpnmastersm.singaporevpnmaster.R;
+import com.vpnmastersm.singaporevpnmaster.autoconfig.AutoConfigVPN;
+import com.vpnmastersm.singaporevpnmaster.vpnhelper.VPNServerHelper;
 
 import java.util.Locale;
 

@@ -1,4 +1,4 @@
-package com.vpnmastersm.singaporevpn.adscontrol;
+package com.vpnmastersm.singaporevpnmaster.adscontrol;
 
 import android.app.Activity;
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3a3f5c"
-    tools:context="com.vpnmastersm.singaporevpn.homeui.main.NativeAdActivity">
+    tools:context="com.vpnmastersm.singaporevpnmaster.homeui.main.NativeAdActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"

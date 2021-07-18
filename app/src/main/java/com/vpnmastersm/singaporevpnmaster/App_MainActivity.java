@@ -1,4 +1,4 @@
-package com.vpnmastersm.singaporevpn;
+package com.vpnmastersm.singaporevpnmaster;
 
 import com.startapp.sdk.adsbase.StartAppAd;
 import com.startapp.sdk.adsbase.StartAppSDK;

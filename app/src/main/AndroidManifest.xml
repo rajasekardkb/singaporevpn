@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.vpnmastersm.singaporevpn">
-
+    package="com.vpnmastersm.singaporevpnmaster">
+    
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -12,7 +12,7 @@
         tools:node="remove" />
 
     <application
-        android:name="com.vpnmastersm.singaporevpn.App_MainActivity"
+        android:name="com.vpnmastersm.singaporevpnmaster.App_MainActivity"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/logo"
@@ -23,7 +23,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name="com.vpnmastersm.singaporevpn.Activity_Nav"
+            android:name="com.vpnmastersm.singaporevpnmaster.Activity_Nav"
             android:label="@string/title_activity_navigation"
             android:theme="@style/AppTheme.NoActionBar"/>
 
@@ -39,7 +39,7 @@
 
 
         <activity
-            android:name="com.vpnmastersm.singaporevpn.SplashScreenActivity"
+            android:name="com.vpnmastersm.singaporevpnmaster.SplashScreenActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
             <intent-filter>
@@ -54,7 +54,7 @@
             android:excludeFromRecents="true"
             android:theme="@style/blinkt.dialog" />
         <activity
-            android:name="com.vpnmastersm.singaporevpn.homeui.main.NativeAdActivity"
+            android:name="com.vpnmastersm.singaporevpnmaster.homeui.main.NativeAdActivity"
             android:autoRemoveFromRecents="true"
             android:excludeFromRecents="true"
             android:hardwareAccelerated="true"
@@ -66,12 +66,12 @@
             android:noHistory="true"
             android:theme="@style/blinkt.dialog" />
 
-        <activity android:name="com.vpnmastersm.singaporevpn.FeedbackActivity"
+        <activity android:name="com.vpnmastersm.singaporevpnmaster.FeedbackActivity"
             android:label="@string/feedback"
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.vpnmastersm.singaporevpn.Activity_Nav" />
+                android:value="com.vpnmastersm.singaporevpnmaster.Activity_Nav" />
         </activity>
         <service
             android:name="de.blinkt.openvpn.core.OpenVPNService"

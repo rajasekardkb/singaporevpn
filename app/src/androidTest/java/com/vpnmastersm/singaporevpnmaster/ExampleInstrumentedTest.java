@@ -1,4 +1,4 @@
-package com.vpnmastersm.singaporevpn;
+package com.vpnmastersm.singaporevpnmaster;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
